@@ -1,9 +1,12 @@
+import org.junit.Test;
 
-public class Sample {
+public class StringTest {
 
-	public static void main(String[] args) {
+
+	@Test
+	public void TestConstractor() {
 		String name = "Jun Otani";
-		System.out.println(name);
+		System.out.println(name); // Output: Jun Otani
 
 		int codePointOfJ = name.codePointAt(0);
 		int codePointOft = name.codePointAt(5);
@@ -11,5 +14,4 @@ public class Sample {
 		String stringOfcodePoints = new String(codePoints, 0, 2);
 		System.out.println(stringOfcodePoints);// Output: Ja
 	}
-
 }
