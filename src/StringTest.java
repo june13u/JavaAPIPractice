@@ -33,6 +33,9 @@ public class StringTest {
 
 		// 左シフト演算符号あり
 		Assert.assertThat(-100 << 1, is(-200));
+		
+		String hibyte = new String (new byte[]{111,111,111}, 10, 0, 3);
+		System.out.println(hibyte);
 
 	}
 }
